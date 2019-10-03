@@ -1,0 +1,71 @@
+So, let’s get started by first installing Docker on Ubuntu operating system.
+
+Docker installation On Ubuntu
+
+Step 1: To install docker on Ubuntu box, first let us update the packages.
+
+Command:
+sudo apt-get update
+
+This will ask for the password. Type your own "password" after the $
+
+
+Step 2: Now before installing docker, I need to install the recommended packages. For that, just type in the below command:
+
+Command:
+sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+
+Press “y” to continue. 
+
+After this, we are done with the pre-requisites! Now, let’s move ahead and install Docker.
+
+Step 3: Type in the below command to install docker engine:
+
+Command:
+sudo apt-get install docker-engine
+
+Sometimes it will ask again ask for the password. Hit enter and the installation will begin.
+
+
+One this is done, your task to install docker will be completed!
+
+Step 4: So let’s just simply start the docker service. For that, just type in the below command:
+
+Command:
+sudo service docker start
+
+It says your job is already running. Congratulations! docker has been successfully installed.
+
+Step 5: Now just to verify that docker is successfully running, let me show you how to pull a CentOS image from docker hub and run the CentOS container. For that, just type in the below command:
+
+Command:
+sudo docker pull centos
+
+First, it will check the local registry for CentOS image. If it doesn’t find there, then it will go to the docker hub and pull the image.
+
+So we have successfully pulled a centOS image from docker hub. Next, let us run the CentOS container. For that, just type in the below command:
+
+Command:
+sudo docker run -it centos
+
+So to summarize, We have first installed docker on Ubuntu, after that we have pulled a CentOS image from docker hub and using that image, we have successfully built a CentOS container. To know more about docker containers and how it works, you can refer this blog on Docker Container.
+
+https://www.edureka.co/blog/install-docker/
+
+
+This is how you install docker and build a container on Ubuntu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

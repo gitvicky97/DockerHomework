@@ -1,5 +1,5 @@
 # DockerHomework
-*docker is one of the best Containerization tools 
+docker is one of the best Containerization tools 
 #
 So let's get started and get familiar with docker 
 #
